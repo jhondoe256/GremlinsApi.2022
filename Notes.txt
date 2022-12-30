@@ -1,0 +1,19 @@
+1. Do the Data Layer
+    A. Create Domain Objects (Gremlin, JailHouse, Charge)
+    B. Make User Secret
+    C. Make ApplicationDbContext.cs (class)
+        1. Create DbSet<T> 
+    *API LAYER*
+    D. Add builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    **Create Migration (initMigration)**
+    
+2. Do the Models Layer
+
+3. Dot the Services Layer
+    1. *API Layer and  ->  addScoped<Interface,Class>();
+
+
+4. Do the Controller Layer
+    A. JailHouseController is first (has no FK's)
+    B. GremlinController is Second B/c it needs a JailHouse FK (JailHouseId)
+    C. ChargeController is Third b/c it needs a Gremlin FK (GrmelinId)

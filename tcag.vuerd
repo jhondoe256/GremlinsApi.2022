@@ -1,0 +1,230 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -5.5,
+    "scrollLeft": -11,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Gremlin",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1c4c1463-99fc-4f10-a50a-9c6a08c8e935"
+          },
+          {
+            "name": "Name",
+            "comment": "",
+            "dataType": "string",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "af24bc15-f204-43f2-81ba-89ec2c3832d7"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 123.5,
+          "top": 52.5,
+          "zIndex": 50,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FF0101"
+        },
+        "visible": true,
+        "id": "a213dab9-432b-418f-ae2b-62525a92c509"
+      },
+      {
+        "name": "Charge",
+        "comment": "",
+        "columns": [
+          {
+            "name": "Id",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3dad7a2c-c553-4d4d-ac07-a7ccf51b2a4d"
+          },
+          {
+            "name": "DateOfCharge",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 85.82080078125,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "b49cbfea-7f63-4d54-9062-59e99ec87b11"
+          },
+          {
+            "name": "GremlinId",
+            "comment": "",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "db0482a1-a1e4-4be4-b9e1-f9622cb372fa"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 571,
+          "top": 138,
+          "zIndex": 48,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#004CFF"
+        },
+        "visible": true,
+        "id": "81c8e0be-059b-4589-a5a4-b1749a72ba1f"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "a213dab9-432b-418f-ae2b-62525a92c509",
+          "columnIds": [
+            "1c4c1463-99fc-4f10-a50a-9c6a08c8e935"
+          ],
+          "x": 470.5,
+          "y": 107.5,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "81c8e0be-059b-4589-a5a4-b1749a72ba1f",
+          "columnIds": [
+            "db0482a1-a1e4-4be4-b9e1-f9622cb372fa"
+          ],
+          "x": 571,
+          "y": 203.25,
+          "direction": "left"
+        },
+        "constraintName": "fk_gremlin_to_charge",
+        "visible": true,
+        "id": "9e298318-c414-48f9-8e79-416b6759bc60"
+      }
+    ]
+  }
+}
